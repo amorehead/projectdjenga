@@ -14,8 +14,11 @@
 	<!-- user javascript -->
 	<script src="{% static 'webapp/js/userFunctions.js' %}"></script>
 
+	<!-- animate.css files -->
+	<link rel="stylesheet" href="{% static 'webapp/css/animate.css' %}" type="text/css"/ß>
+
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
 
 
 </head>
@@ -26,13 +29,19 @@
 		<!-- lets get a really cool hero section here -->
 		<div class="hero">
 			<div class="heroText">
-				<h2 id="title"> Project Djenga </h2>
+				<h2 class="animated lightSpeedIn" id="title"> Project Djenga </h2>
+				<h3 class="animated lightSpeedIn"id ="subtitle">Exlploring The Power Of Python</h3>
 			</div>
+
+			<div id="scrollDown">
+				<a href="#bodyMain"><img class="animated flash infinite" id="downArrow" src="static/webapp/img/menu-down-arrow.png"></a>
+			</div>
+
 		</div>
 
 
 		<!-- sidebar and block section -->
-		<div class="row">
+		<div class="row" id="bodyMain">
 		  <div class="col-sm-2">
 		  <br>
 
