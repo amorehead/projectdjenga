@@ -14,31 +14,24 @@
 	<!-- user javascript -->
 	<script src="{% static 'webapp/js/userFunctions.js' %}"></script>
 
-	<style type="text/css">
-		html,
-		body {
-		  height:100%
-		}
-	</style>
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
 </head>
 
 <body class="body" style="background-color:#f6f6f6">
 	<div class="container-fluid" style="min-height:95%; ">
-		<div class="row">
-			  <div class="col-sm-2">
-				  <br>
-				  <center>
-					<img src="{% static 'webapp/img/django-icon.png' %}" class="responsive-img" style='max-height:100px;' alt="face">
-				  </center>
-			  </div>
-			  <div class="col-sm-10">
-				  <br>
-				  <center>
-				  <h3 onclick='test()''>Python + Django = Awesome</h3>
-				  </center>
-			  </div>
-		</div><hr>
 
+		<!-- lets get a really cool hero section here -->
+		<div class="hero">
+			<div class="heroText">
+				<h2 id="title"> Project Djenga </h2>
+			</div>
+		</div>
+
+
+		<!-- sidebar and block section -->
 		<div class="row">
 		  <div class="col-sm-2">
 		  <br>
@@ -59,6 +52,7 @@
 			<div class='container-fluid'>
 			<br><br>
 			   {% block content %}
+				 <h3>  </h3>
 			   {% endblock %}
 			</div>
 		  </div>
