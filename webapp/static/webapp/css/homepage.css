@@ -6,32 +6,56 @@ add all media queries at the bottom of the page
 
 body{
   font-family: 'Raleway', sans-serif;
-
+  background-color: #ffecb3;
+  height: 100%;
 }
+
 
 /* large picture intro section*/
 .hero{
-  background-image: url("../img/pc.jpg");
-  height: 60vh;
+  background-image: url("../img/night.jpg");
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
 
+
+#downArrow{
+  max-width: 65px;
+  max-height: 65px;
+  animation-duration: 4.5s;
+}
+
+#scrollDown{
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .heroText{
     text-align: center;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
 }
+
 
 #title{
   color:white;
-  font-size: 68px;
+  font-size: 78px;
   font-weight: bold;
-  text-shadow: 1px 1px rgba(27, 235, 66, 0.37);
+  text-shadow: 1px 1px #5e35b1;
 }
+
+
+#subtitle{
+  animation-delay: .5s;
+  color:white;
+  font-size: 30px;
+}
+/* end of hero section */
