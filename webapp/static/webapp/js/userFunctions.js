@@ -9,8 +9,10 @@ $(document).ready(function() {
     }
   });
 
-  /* Smooth scroll for menu */
-  
+  /* Smooth scroll
+  still isnt working, ill get on it though
+  itll basically allow that button to smooth scroll to the bottom of the page
+  */
 
 
 });

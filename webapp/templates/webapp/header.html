@@ -3,58 +3,84 @@
 
 <head>
 	<title>Project Djenga</title>
-	<meta charset="utf-8" />
-	{% load staticfiles %}
-	<link rel="stylesheet" href="{% static 'webapp/css/bootstrap.min.css' %}" type = "text/css"/>
-	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" /> {% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'webapp/css/bootstrap.min.css' %}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- personal css. Use this file to add css to pages -->
-	<link rel="stylesheet" href="{% static 'webapp/css/homepage-header-footer.css' %}" type = "text/css"/>
-	<link rel="stylesheet" href="{% static 'webapp/css/navigation.css' %}" type = "text/css"/>
+	<link rel="stylesheet" href="{% static 'webapp/css/homepage-header-footer.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'webapp/css/navigation.css' %}" type="text/css" />
+	<link href="{% static 'webapp/css/bodyHome.css' %}" rel="stylesheet" />
 	<!-- cdn for jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- user javascript -->
 	<script src="{% static 'webapp/js/userFunctions.js' %}"></script>
 	<!-- animate.css files -->
-	<link rel="stylesheet" href="{% static 'webapp/css/animate.css' %}" type="text/css"/ß>
+	<link rel="stylesheet" href="{% static 'webapp/css/animate.css' %}" type="text/css" /ß>
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+	<!-- smooth scroll -->
+	<script type="text/javascript" src="path/to/smoothscroll.min.js"></script>
+
 
 
 </head>
 
 
-{% block content %}
+{% block content %} {% endblock %}
 
-{% endblock %}
+<!-- lets get a really cool hero section here -->
+<div class="hero">
+	<div class="heroText">
+		<h2 id="title"> Project Djenga </h2>
+		<h3 id="subtitle">Exploring The Power Of Python</h3>
+	</div>
 
-		<!-- lets get a really cool hero section here -->
-		<div class="hero">
-			<div class="heroText">
-				<h2  id="title"> Project Djenga </h2>
-				<h3 id ="subtitle">Exploring The Power Of Python</h3>
-			</div>
+	<div id="scrollDown">
+		<a href="#bodyMain"><img class="animated flash infinite" id="downArrow" src="static/webapp/img/menu-down-arrow.png"></a>
+	</div>
+</div>
 
-			<div id="scrollDown">
-				<a href="#bodyMain"><img class="animated flash infinite" id="downArrow" src="static/webapp/img/menu-down-arrow.png"></a>
-			</div>
+<div id="bodyMain">
+	{% block body %} {%endblock %}
+</div>
+<footer>
+	<div class="container-fluid">
+
+		<div class="col-md-12 text-center">
+			<h2 id="contributeTitle"> Check Us Out On GitHub! </h2>
 		</div>
+	</hr>
+		<div class="col-md-12 footerRow" id="footerSection">
 
-		{% block body %} {%endblock %}
-
-	<footer>
-		<div class="container-fluid" >
-
-			<div class="col-md-12 footerRow" id="footerSection">
-				<div class="col-md-4 text-center">
+			<div class="col-md-3 text-center">
 				<span id="contribute">
 				<a href="https://github.com/FrozenTriforce/projectdjenga" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
 				<p> Project Djenga Repo </p>
 			</span>
-		</div>
+			</div>
+			<div class="col-md-3 elliotGit text-center">
+				<span id="elliot">
+				<a href="https://github.com/devOpElliot" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<p>Elliot Fortney</p>
+			</span>
+			</div>
+			<div class="col-md-3 elliotGit text-center">
+				<span id="alex">
+				<a href="https://github.com/FrozenTriforce" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<p>Alex Morehead</p>
+			</span>
+			</div>
+			<div class="col-md-3 elliotGit text-center">
+				<span id="keilan">
+				<a href="https://github.com/KielanSean" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<p>Keilan Sean</p>
+			</span>
+			</div>
+
 		</div>
 
 	</div>
-	</footer>
+</footer>
 
 </body>
 
