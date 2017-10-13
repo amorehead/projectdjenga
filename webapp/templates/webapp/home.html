@@ -1,7 +1,28 @@
 {% extends "webapp/header.html" %}
 
 {% block content %}
-<p> Hello, world! This is Project Djenga's debut moment! </p>
 
-{% include "webapp/includes/htmlsnippet.html" %}
+  {% include "webapp/navigation.html" %}
+
 {% endblock %}
+
+{%block body %}
+
+<div class="container">
+  <div class="row aboutDjenga">
+    <div class="col-md-12 text-center">
+      <h1> So what is Djenga? </h1>
+    </div>
+  </div>
+
+  <div class="row answerQ">
+    <div class="col-md-12">
+      <div class="container">
+      <h3> Great question. Djenga is an experimental webpage built by three Missouri Western University students to better help them better understand Python. This site is a blog built to show you our journey through our learning efforts, and also to show off our new skills as Django developers.
+      </h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
