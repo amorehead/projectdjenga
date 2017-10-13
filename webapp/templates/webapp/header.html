@@ -9,14 +9,13 @@
 	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
 	<!-- personal css. Use this file to add css to pages -->
 	<link rel="stylesheet" href="{% static 'webapp/css/homepage-header-footer.css' %}" type = "text/css"/>
+	<link rel="stylesheet" href="{% static 'webapp/css/navigation.css' %}" type = "text/css"/>
 	<!-- cdn for jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- user javascript -->
 	<script src="{% static 'webapp/js/userFunctions.js' %}"></script>
-
 	<!-- animate.css files -->
 	<link rel="stylesheet" href="{% static 'webapp/css/animate.css' %}" type="text/css"/ß>
-
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
 
@@ -24,12 +23,14 @@
 </head>
 
 
+{% block content %}
 
+{% endblock %}
 		<!-- lets get a really cool hero section here -->
 		<div class="hero">
 			<div class="heroText">
-				<h2 class="animated zoomIn" id="title"> Project Djenga </h2>
-				<h3 class="animated zoomIn"id ="subtitle">Exploring The Power Of Python</h3>
+				<h2  id="title"> Project Djenga </h2>
+				<h3 id ="subtitle">Exploring The Power Of Python</h3>
 			</div>
 
 			<div id="scrollDown">
@@ -38,37 +39,7 @@
 
 		</div>
 
-		<body class="body" style="background-color:#f6f6f6">
-			<div class="container-fluid" style="min-height:95%; ">
 
-
-		<!-- sidebar and block section -->
-		<div class="row" id="bodyMain">
-		  <div class="col-sm-2">
-		  <br>
-
-		  <br>
-		   <!-- Great, til you resize. -->
-			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
-			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
-			  <ul class="nav nav-pills nav-stacked">
-				<li><a href='/'>Home</a></li>
-				<li><a href='/blog/'>Blog</a></li>
-				<li><a href='/contact/'>Contact</a></li>
-			  </ul>
-			</div> <!--well bs-sidebar affix-->
-		  </div> <!--col-sm-2-->
-		  <div class="col-sm-10">
-
-			<div class='container-fluid'>
-			<br><br>
-			   {% block content %}
-				 <h3>  </h3>
-			   {% endblock %}
-			</div>
-		  </div>
-		</div>
-	</div>
 	<footer>
 		<div class="container-fluid" >
 
