@@ -1,1 +1,45 @@
-<h3> This is a test HTML page for the contact page!
+{% extends "webapp/mainHeader.html" %}
+
+{% block body %}
+
+<h3> This is a test HTML page for the contact page! </h3>
+<footer>
+	<div class="container-fluid">
+
+		<div class="col-md-12 text-center">
+			<h2 id="contributeTitle"> Check Us Out On GitHub! </h2>
+		</div>
+	</hr>
+		<div class="col-md-12 footerRow" id="footerSection">
+
+			<div class="col-md-3 text-center">
+				<span id="contribute">
+				<a href="https://github.com/FrozenTriforce/projectdjenga" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<p> Project Djenga Repo </p>
+			</span>
+			</div>
+			<div class="col-md-3 elliotGit text-center">
+				<span id="elliot">
+				<a href="https://github.com/devOpElliot" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<p>Elliot Fortney</p>
+			</span>
+			</div>
+			<div class="col-md-3 elliotGit text-center">
+				<span id="alex">
+				<a href="https://github.com/FrozenTriforce" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<p>Alex Morehead</p>
+			</span>
+			</div>
+			<div class="col-md-3 elliotGit text-center">
+				<span id="keilan">
+				<a href="https://github.com/KielanSean" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<p>Keilan Sean</p>
+			</span>
+			</div>
+
+		</div>
+
+	</div>
+</footer>
+
+{% endblock %}

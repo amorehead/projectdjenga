@@ -26,25 +26,8 @@
 </head>
 
 
-{% block content %} {% endblock %}
 
-<!-- lets get a really cool hero section here -->
-<div class="hero">
-	<div class="heroText">
-		<h2 id="title"> Project Djenga </h2>
-		<h3 id="subtitle">Exploring The Power Of Python</h3>
-	</div>
+{% block body %}
+{% include "webapp/navigation.html" %}
 
-	<div id="scrollDown">
-		<a href="#bodyMain"><img class="animated flash infinite" id="downArrow" src="static/webapp/img/menu-down-arrow.png"></a>
-	</div>
-</div>
-
-<div id="bodyMain">
-	{% block body %} {%endblock %}
-</div>
-
-</body>
-
-
-</html>
+{% endblock %}
