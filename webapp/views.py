@@ -5,4 +5,4 @@ def index(request):
     return render(request, 'webapp/home.html')
 
 def contact(request):
-    return render(request, 'webapp/basic.html',{'content':['If you would like to contact us, please visit our Github repository page with the buttons below.']})
+    return render(request, 'webapp/contact.html',{'content':['If you would like to contact us, please visit our Github repository page with the buttons below.']})

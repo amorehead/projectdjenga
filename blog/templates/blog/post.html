@@ -1,5 +1,9 @@
 {% extends "webapp/mainHeader.html" %}
 
+{% block navbar %}
+{% include "webapp/navigation.html" %}
+{% endblock %}
+
 {% block body %}
 <h3><a href="/blog/{{post.id}}">{{ post.title }}</a></h3>
 <h6> on {{ post.date }}</h6>
