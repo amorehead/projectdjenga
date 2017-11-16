@@ -1,6 +1,10 @@
-{% include "webapp/navigation.html" %}
+{% extends "webapp/mainHeader.html" %}
 
-{% block content %}
+{% block navbar %}
+{% include "webapp/navigation.html" %}
+{% endblock %}
+
+{% block body %}
 	{% for post in object_list %}
 		<h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}">  {{ post.title }}</a></h5>
 	{% endfor %}

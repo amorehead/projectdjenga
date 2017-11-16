@@ -6,10 +6,7 @@
 	<meta charset="utf-8" /> {% load staticfiles %}
 	<link rel="stylesheet" href="{% static 'webapp/css/bootstrap.min.css' %}" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- personal css. Use this file to add css to pages -->
-	<link rel="stylesheet" href="{% static 'webapp/css/homepage-header-footer.css' %}" type="text/css" />
-	<link rel="stylesheet" href="{% static 'webapp/css/navigation.css' %}" type="text/css" />
-	<link href="{% static 'webapp/css/bodyHome.css' %}" rel="stylesheet" />
+
 	<!-- cdn for jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- user javascript -->
@@ -18,16 +15,17 @@
 	<link rel="stylesheet" href="{% static 'webapp/css/animate.css' %}" type="text/css" /ß>
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
-	<!-- smooth scroll -->
-	<script type="text/javascript" src="path/to/smoothscroll.min.js"></script>
+
 
 
 
 </head>
 
+{% block navbar %}
+
+{% endblock %}
 
 
 {% block body %}
-{% include "webapp/navigation.html" %}
 
 {% endblock %}
