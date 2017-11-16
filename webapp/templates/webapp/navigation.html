@@ -1,6 +1,26 @@
 
 {% block navbar %}
 
+<style>
+#sidebar{
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  background-color: black;
+}
+
+a{
+  color:white !important;
+  border-right: 1px white solid;
+}
+
+.navPill > a:hover{
+  background-color: #5e35b1 !important;
+  color: white !important;
+}
+
+</style>
+
 <div id="sidebar" >
 
   <ul class="nav nav-pills ">
