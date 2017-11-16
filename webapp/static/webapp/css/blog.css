@@ -1,0 +1,20 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.postEntry a{
+  color: purple !important;
+  font-size: 20px;
+}
+
+.postEntry{
+  box-shadow: 5px 3px 3px purple;
+  border: 1px solid purple;
+  background-color: #f9f9f9;
+  color: black !important;
+  padding: 50px;
+}
+
+.titleRow{
+  padding: 25px;
+}

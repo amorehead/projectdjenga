@@ -6,7 +6,20 @@
 
 
 {% block body %}
+
+<div class="container">
+	<div class="row titleRow text-center">
+		<div class="col-md-12">
+			<h1> Project Djenga Blog </h1>
+		</div>
+	</div>
+
+	<div class="row">
 	{% for post in object_list %}
-		<h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}">  {{ post.title }}</a></h5>
+			<div class="col-md-4 postEntry">
+		<h4>{{ post.date|date:"Y-m-d" }} :<a href="/blog/{{post.id}}">  {{ post.title }}</a></h4>
+			</div>
 	{% endfor %}
+</div>
+</div>
 {% endblock %}
