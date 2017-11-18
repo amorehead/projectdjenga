@@ -5,10 +5,16 @@ add all media queries at the bottom of the page
 
 body {
   font-family: 'Raleway', sans-serif;
-  height: 90vh;
+  height: 100vh;
 }
 
+#bodyMain{
+  height: 100vh;
+}
 
+#homePageQ{
+  padding-top:50px;
+}
 /* large picture intro section*/
 
 .hero {
