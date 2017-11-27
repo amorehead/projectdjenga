@@ -8,11 +8,14 @@
 
 
 {% block body %}
-<h3><a href="/blog/{{post.id}}">{{ post.title }}</a></h3>
-<h6> on {{ post.date }}</h6>
-
 <div class = "container">
-	{{ post.body|safe|linebreaks}}
+<div class="col-md-12 text-left">
+<h3><a href="/blog/{{post.id}}">{{ post.title }}</a></h3>
+<h4> on {{ post.date }}</h4>
 </div>
+<div class="col-md-12 text-center">
+	{{ post.body|safe|linebreaks}}
 <br><br>
+</div>
+</div>
 {% endblock %}
