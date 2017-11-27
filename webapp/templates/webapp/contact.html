@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-
+{% load static %}
 <footer>
 	<div class="container-fluid">
 
@@ -14,22 +14,22 @@
 	</hr>
 		<div class="col-md-12 footerRow" id="footerSection">
 
-		
+
 			<div class="col-md-3 elliotGit text-center">
 				<span id="elliot">
-				<a href="https://github.com/devOpElliot" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<a href="https://github.com/devOpElliot" target="_blank"><img src="{% static "webapp/img/gitLogo.png" %}" id="gitHubLogo"/></a>
 				<p>Elliot Fortney</p>
 			</span>
 			</div>
 			<div class="col-md-3 elliotGit text-center">
 				<span id="alex">
-				<a href="https://github.com/FrozenTriforce" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<a href="https://github.com/FrozenTriforce" target="_blank"><img src="{% static "webapp/img/gitLogo.png" %}" id="gitHubLogo"/></a>
 				<p>Alex Morehead</p>
 			</span>
 			</div>
 			<div class="col-md-3 elliotGit text-center">
 				<span id="keilan">
-				<a href="https://github.com/KielanSean" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
+				<a href="https://github.com/KielanSean" target="_blank"><img src="{% static "webapp/img/gitLogo.png" %}" id="gitHubLogo"/></a>
 				<p>Kielan Sullivan</p>
 			</span>
 			</div>
