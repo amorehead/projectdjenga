@@ -5,13 +5,12 @@
 {% endblock navbar %}
 
 
-
-
 {% block body %}
 <div class = "container">
 <div class="col-md-12 text-left">
 <h3><a href="/blog/{{post.id}}">{{ post.title }}</a></h3>
 <h4> on {{ post.date }}</h4>
+<a href="/blog/"><button id="backButton">Back</button></a>
 </div>
 <div class="col-md-12 text-center">
 	{{ post.body|safe|linebreaks}}
