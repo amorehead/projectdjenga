@@ -1,0 +1,22 @@
+{
+  "name": "projectdjenga",
+  "version": "1.1.0",
+  "description": "blog site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amorehead/projectdjenga.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amorehead/projectdjenga/issues"
+  },
+  "homepage": "https://github.com/amorehead/projectdjenga#readme",
+  "dependencies": {
+    "jquery-smooth-scroll": "~2.2.0"
+  }
+}
