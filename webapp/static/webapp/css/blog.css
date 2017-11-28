@@ -8,12 +8,13 @@ body{
 }
 
 .postEntry{
-  box-shadow: 5px 3px 3px purple;
-  border: 1px solid purple;
+  text-align: center;
+  box-shadow: 5px 3px black;
+  border: 1px solid black;
   background-color: #f9f9f9;
   color: black !important;
-  padding: 5px;
-  height: 180px !important;
+  padding: 15px;
+  height: 140px !important;
   border-radius: 9px;
 }
 
