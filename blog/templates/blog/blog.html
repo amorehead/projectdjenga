@@ -1,11 +1,4 @@
-{% extends "webapp/mainHeader.html" %}
-
-{% block navbar %}
-{% include "webapp/navigation.html" %}
-{% endblock navbar %}
-
-
-{% block body %}
+{% extends "webapp/mainHeader.html" %} {% block navbar %} {% include "webapp/navigation.html" %} {% endblock navbar %} {% block body %}
 
 <div class="container">
 	<div class="row titleRow text-center">
@@ -16,10 +9,12 @@
 </div>
 
 
-	{% for post in object_list %}
-			<div class="col-md-4 postEntry">
-		<h4>{{ post.date|date:"Y-m-d" }} :<a href="/blog/{{post.id}}">  {{ post.title }}</a></h4>
-			</div>
-	{% endfor %}
-
-{% endblock %}
+{% for post in object_list %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 postEntry">
+			<h4>{{ post.date|date:"Y-m-d" }} :<a href="/blog/{{post.id}}">  {{ post.title }}</a></h4>
+		</div>
+	</div>
+</div>
+{% endfor %} {% endblock %}

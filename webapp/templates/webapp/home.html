@@ -1,8 +1,4 @@
-{% extends "webapp/header.html" %}
-{% block content %}
-{% include "webapp/navigation.html" %}
- {% endblock %}
- {% block body %}
+{% extends "webapp/header.html" %} {% block content %} {% include "webapp/navigation.html" %} {% endblock %} {% block body %}
 
 <div class="container">
   <div class="row aboutDjenga">
@@ -10,27 +6,34 @@
       <h1 id="homePageQ"> So what is Djenga? </h1>
     </div>
   </div>
+</div>
 
+<div class="container">
   <div class="row answerQ">
-    <div class="col-md-12">
-      <div class="container">
-        <h3> Great question. Djenga is an experimental webpage built by three Missouri Western State University students to better help them better understand Python. This site includes a blog built to demonstrate a journey of the efforts we went through to learn Django, a popular web framework for "perfectionists with deadlines" as deemed so by its creators. It also exists to show off our new skills as Python programmers.</h3>
-      </br>
-
-
-        <h3>The Django web framework is an incredibly-intuitive way to create websites. It works through the philosophy that every page contained in your website that isn't static should be considered an independent application. Django also provides integration for Jinja, a powerful Python templating-scheme that allows users to dynamically display their content. Check out our blog for more information on all things related to Python and Django, and also feel free to check out our contact page for additional information about this project's contributors and to gain a better overall understanding of who we are as developers.</h3>
-        <hr>
-
-      </div>
+    <div class="col-md-6">
+      <p id="aboutDjango_text"> Great question. Djenga is an experimental webpage built by three Missouri Western State University students to better help them better understand Python. This site includes a blog built to demonstrate a journey of the efforts we went through to
+        learn Django, a popular web framework for "perfectionists with deadlines" as deemed so by its creators. It also exists to show off our new skills as Python programmers. The Django web framework is an incredibly-intuitive way to create websites.
+        It works through the philosophy that every page contained in your website that isn't static should be considered an independent application. Django also provides integration for Jinja, a powerful Python templating-scheme that allows users to dynamically
+        display their content. Check out our blog for more information on all things related to Python and Django, and also feel free to check out our contact page for additional information about this project's contributors and to gain a better overall
+        understanding of who we are as developers.</p>
+      <hr>
     </div>
-  </div>
 
-  <div class="col-md-12 text-center">
-    <span id="contribute">
+    <div class="col-md-6">
+      <h3 class="text-center">Hint: (Not this) </h3>
+      <div style="position:relative;height:0;padding-bottom:36.11%"><iframe src="https://www.youtube.com/embed/QbmDpEhAp48?ecver=2" style="position:absolute;width:100%;height:420px;left:0" width="997" height="360" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="col-md-12 text-center">
+  <span id="contribute">
     <a href="https://github.com/FrozenTriforce/projectdjenga" target="_blank"><img src="static/webapp/img/gitLogo.png" id="gitHubLogo"/></a>
     <p> Project Djenga Repo </p>
   </span>
-  </div>
+</div>
 
 
 </div>
