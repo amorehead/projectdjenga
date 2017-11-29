@@ -1,4 +1,5 @@
 body{
+    background-color: white);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -8,10 +9,11 @@ body{
 }
 
 .postEntry{
+  margin:8px;
   text-align: center;
-  box-shadow: 5px 3px black;
-  border: 1px solid black;
-  background-color: #f9f9f9;
+  box-shadow: 6px 6px #f4f4f4;
+  border: 1px solid #f4f4f4;
+  background-color: white;
   color: black !important;
   padding: 15px;
   height: 140px !important;
